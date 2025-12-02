@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>LeaFrice — Nasi Ayam Jeruk</title>
+  <meta name="description" content="LeaFrice — Nasi Ayam Jeruk. Halal, lezat, siap antar.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="assets/logo.jpg">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="assets/logo.jpg" alt="LeaFrice Logo" class="logo">
+        <div>
+          <h1>LeaFrice</h1>
+          <p class="tag">Nasi Ayam Jeruk — Rasa Rumah, Halal & Otentik</p>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="#home">Beranda</a>
+        <a href="#produk">Produk</a>
+        <a href="#menu">Menu / Price List</a>
+        <a href="#dokumen">Dokumentasi</a>
+        <a href="#pembayaran">Pembayaran</a>
+        <a href="#kontak">Kontak</a>
+        <a href="linktree.html" class="btn-linktree">Linktree</a>
+      </nav>
+      <button id="menuToggle" class="hamburger">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO / BERANDA (Tap 1 + desain background) -->
+    <section id="home" class="hero" style="background-image: url('assets/background.jpg')">
+      <div class="container hero-inner">
+        <h2>LeaFrice — Nasi Ayam Jeruk</h2>
+        <p class="lead">Menyajikan nasi ayam bercita rasa jeruk yang segar, dibuat dengan standar halal dan resep rumahan.</p>
+        <div class="actions">
+          <a href="#produk" class="btn btn-primary">Lihat Produk</a>
+          <a href="#menu" class="btn btn-secondary">Daftar Harga</a>
+        </div>
+        <div class="trust">
+          <span>Alamat: Jl. Mulia Indah No.6, Tengkerang Labuai (Kos putri muslimah), BUKIT RAYA, KOTA PEKANBARU, RIAU, ID 28281</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUK (Tap 1 & 3) -->
+    <section id="produk" class="section">
+      <div class="container">
+        <h3>Produk Unggulan</h3>
+        <div class="product-grid">
+          <article class="product-card">
+            <img src="assets/Nasi Ayam Jeruk LeaFrice.jpg" alt="Nasi Ayam Jeruk LeaFrice">
+            <div class="prod-info">
+              <h4>Nasi Ayam Jeruk LeaFrice</h4>
+              <p>Deskripsi: Nasi hangat dengan ayam berbumbu jeruk, cocok untuk santap siang dan malam. Halal certified (self-managed).</p>
+              <p class="price">Rp 28.000</p>
+              <div class="prod-actions">
+                <button class="btn btn-outline" data-action="add-to-cart" data-name="Nasi Ayam Jeruk LeaFrice" data-price="28000">Tambah ke Keranjang</button>
+                <button class="btn" onclick="openDetail()">Detail</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- RAK & PRICE LIST (Tap 4 & 5) -->
+    <section id="menu" class="section alt">
+      <div class="container">
+        <h3>Daftar Menu & Price List</h3>
+        <table class="price-list">
+          <thead>
+            <tr><th>Nama Produk</th><th>Deskripsi</th><th>Harga</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Nasi Ayam Jeruk LeaFrice</td><td>Porsi nasi, ayam berbumbu jeruk, lalapan</td><td>Rp 28.000</td></tr>
+            <tr><td>Ayam Jeruk + Es Teh</td><td>Paket hemat</td><td>Rp 33.000</td></tr>
+          </tbody>
+        </table>
+        <p class="note">Kontak untuk pemesanan & info COD atau kurir: lihat bagian Kontak & Pengiriman.</p>
+      </div>
+    </section>
+
+    <!-- DOKUMENTASI (Tap 6) -->
+    <section id="dokumen" class="section">
+      <div class="container">
+        <h3>Dokumentasi & Video</h3>
+        <p>Proses pembuatan, testimoni, dan video promosi akan dipublikasikan di channel YouTube usaha.</p>
+        <div class="media-grid">
+          <!-- contoh embed youtube (ganti link dengan channel usaha) -->
+          <div class="video-card">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" title="YouTube video" frameborder="0" allowfullscreen></iframe>
+            <p>Proses Pembuatan — Nasi Ayam Jeruk</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PEMBAYARAN (Tap 7) -->
+    <section id="pembayaran" class="section alt">
+      <div class="container">
+        <h3>Pembayaran</h3>
+        <ul class="payment-list">
+          <li>Offline: Bayar di tempat (cash)</li>
+          <li>Online: Transfer Rekening (contoh: BSI 123456789 a.n. LeaFrice — ganti sesuai data)</li>
+          <li>E-wallet: Gopay / Dana (nomor/QR akan ditampilkan pada saat checkout)</li>
+          <li>QRIS usaha: (unggah gambar QRIS ke assets dan tampilkan di sini)</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- GOOGLE MAP (Tap 8) -->
+    <section id="lokasi" class="section">
+      <div class="container">
+        <h3>Lokasi Usaha</h3>
+        <p>Jl. Mulia Indah No.6, Tengkerang Labuai, Bukit Raya, Kota Pekanbaru, Riau.</p>
+        <!-- Jika ingin embed map: ganti src dengan embed Google Maps -->
+        <div class="map-placeholder">[Embed Google Maps di sini — tambahkan iframe Google Maps]</div>
+      </div>
+    </section>
+
+    <!-- DATABASE KONSUMEN (Tap 9) -->
+    <section id="database" class="section alt">
+      <div class="container">
+        <h3>Database Konsumen</h3>
+        <p>Catatan: Penyimpanan data pelanggan (foto pembelian, nama, nomor telepon) harus sesuai kebijakan privasi. Untuk sementara, sistem ini hanya mockup.</p>
+      </div>
+    </section>
+
+    <!-- KERJASAMA (Tap 10) -->
+    <section id="kerjasama" class="section">
+      <div class="container">
+        <h3>Kerjasama</h3>
+        <p>Jika ingin bekerjasama (event, catering, reseller), hubungi kami via WhatsApp atau email.</p>
+      </div>
+    </section>
+
+    <!-- PROMOSI (Tap 11) -->
+    <section id="promosi" class="section alt">
+      <div class="container">
+        <h3>Promosi & Pemasaran</h3>
+        <p>Promo: diskon paket, bundling untuk catering event, kupon khusus follower media sosial.</p>
+      </div>
+    </section>
+
+    <!-- ATURAN / POLICY (Tap 12) -->
+    <section id="policy" class="section">
+      <div class="container">
+        <h3>Policy Usaha</h3>
+        <ul>
+          <li>Deskripsi usaha: LeaFrice menyediakan makanan bersertifikat halal (self-managed).</li>
+          <li>Aturan pemesanan: DP untuk pemesanan jumlah besar, order minimal 2 porsi (contoh).</li>
+          <li>Return / Refund: Refund diizinkan jika pesanan salah atau rusak saat pengiriman.</li>
+          <li>Kontak: lihat bagian kontak untuk klaim & layanan tanggapan.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- PENGIRIMAN (Tap 13) -->
+    <section id="pengiriman" class="section alt">
+      <div class="container">
+        <h3>Pengiriman</h3>
+        <p>Opsi: COD, kurir JNE/J&T/SiCepat (pilih sesuai tujuan), serta listing di Tokopedia/Shopee (jika sudah terdaftar).</p>
+      </div>
+    </section>
+
+    <!-- PENGELOLA DAN PEMILIK (Tap 14) -->
+    <section id="pengelola" class="section">
+      <div class="container">
+        <h3>Pengelola & Pemilik</h3>
+        <p>Pemilik: LeaFrice (nama pemilik diisi). Admin: (isi nama admin & shift packing).</p>
+        <p>Jam Operasional: Senin–Minggu, 09:00–21:00 (ubah sesuai usaha).</p>
+      </div>
+    </section>
+
+    <!-- PENGADUAN (Tap 15) -->
+    <section id="pengaduan" class="section alt">
+      <div class="container">
+        <h3>Pengaduan</h3>
+        <p>Hubungi petugas pengaduan melalui WhatsApp/email. Respon maksimal 24 jam kerja.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER / KONTAK -->
+  <footer id="kontak" class="site-footer">
+    <div class="container footer-inner">
+      <div class="contact">
+        <h4>Kontak & Media Sosial</h4>
+        <p>WhatsApp: <a href="https://wa.me/6281XXXXXXXX">+62 81xxxxxxx</a></p>
+        <p>Email: <a href="mailto:info@leafrice.com">info@leafrice.com</a></p>
+        <p>Alamat: Jl. Mulia Indah No.6, Tengkerang Labuai (Kos putri muslimah), BUKIT RAYA, KOTA PEKANBARU, RIAU, ID 28281</p>
+        <div class="socials">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="Facebook">FB</a>
+          <a href="#" aria-label="Tiktok">TT</a>
+        </div>
+      </div>
+
+      <div class="mini-cart" id="miniCart">
+        <h4>Keranjang</h4>
+        <ul id="cartItems"></ul>
+        <p>Total: <span id="cartTotal">Rp 0</span></p>
+        <button id="checkoutBtn" class="btn">Checkout</button>
+      </div>
+    </div>
+    <div class="credits container">
+      <small>© LeaFrice — Semua hak cipta. Dibuat untuk tugas E-Business.</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
